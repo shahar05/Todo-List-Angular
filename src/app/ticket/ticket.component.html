@@ -1,0 +1,11 @@
+
+<div class="card text-center border border-primary">
+    <div class="card-body">
+      <h5 class="card-title">{{ticket.title}}</h5>
+      <p class="card-text">{{ticket.body}} </p>
+      <p class="card-text">
+        {{ ticket.date | date }}
+      </p>
+      <a  (click)="removeTicket()" class="btn btn-primary">remove</a>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+<h1 class="text-center"> todo</h1>
+
+
+<div class="d-flex justify-content-center">
+    
+    <div class="d-flex flex-column col-10 justify-content-center"  >
+        <app-tickets (itemClicked)="removeItem($event)"   [tickets]="tickets"></app-tickets>
+
+        <div class="d-inline-flex p-3 justify-content-center">
+            <button (click)="addCard()" class="btn  btn-sm btn-primary "> add </button>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!--  12 columns to the page -->
+<!-- this div takes 10 columns from 12 and centered -->
+<!--tickets -- why this-->

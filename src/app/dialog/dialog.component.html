@@ -1,0 +1,29 @@
+
+
+<div class="modal-header">
+
+    <h4 class="modal-title">Add new ticket</h4>
+
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    
+</div>
+
+
+<div class="modal-body">
+
+    <div class="form-group">
+        <input [(ngModel)]="ticket.title" type="text" class="form-control" placeholder="Enter title">
+    </div>
+
+    <div class="form-group">
+        <input type="text" [(ngModel)]="ticket.body" class="form-control" placeholder="text">
+    </div>
+
+</div>
+
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-dark" (click)="sendData()">submit</button>
+</div>
